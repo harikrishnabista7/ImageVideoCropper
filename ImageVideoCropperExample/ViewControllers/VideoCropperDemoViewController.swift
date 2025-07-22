@@ -35,7 +35,7 @@ class VideoCropperDemoViewController: UIViewController, HBCropViewControllerDele
     @IBAction func editVideo(_ sender: Any) {
         guard let videoURL else { return }
         player?.pause()
-        let cropper = HBCropViewController(url: videoURL)
+        let cropper = HBCropViewController(videoURL: videoURL)
         cropper.delegate = self
         present(cropper, animated: true)
     }

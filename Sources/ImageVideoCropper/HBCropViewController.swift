@@ -546,8 +546,8 @@ public class HBCropViewController: UIViewController, TOCropViewControllerDelegat
         setUpCropController()
     }
 
-    public init(url: URL) {
-        toCropViewController = VideoCropViewController(url: url)
+    public init(videoURL: URL) {
+        toCropViewController = VideoCropViewController(url: videoURL)
         super.init(nibName: nil, bundle: nil)
         setUpCropController()
     }
