@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jay-S1-3du">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Demo-->
+        <scene sceneID="kcl-MJ-7Xl">
+            <objects>
+                <tableViewController id="w4M-ti-zZF" customClass="DemoViewController" customModule="ImageVideoCropperExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dYG-iT-8gy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Cropper" id="L4W-w6-Ans">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CQb-Kb-whu">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CQb-Kb-whu" id="NJg-Fn-TN2">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Cropper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfh-Oh-A0a">
+                                                    <rect key="frame" x="20" y="11.333333333333336" width="353" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bfh-Oh-A0a" firstAttribute="centerY" secondItem="NJg-Fn-TN2" secondAttribute="centerY" id="aTy-FL-gIr"/>
+                                                <constraint firstItem="bfh-Oh-A0a" firstAttribute="leading" secondItem="NJg-Fn-TN2" secondAttribute="leading" constant="20" id="qDM-3m-6Px"/>
+                                                <constraint firstAttribute="trailing" secondItem="bfh-Oh-A0a" secondAttribute="trailing" constant="20" id="rHY-TX-JAp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="m0T-ST-42L" kind="show" id="Zo4-8T-dLQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ujt-aw-Au7">
+                                        <rect key="frame" x="0.0" y="93.666667938232422" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ujt-aw-Au7" id="k1n-uF-f5f">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Cropper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3M-ST-TXr">
+                                                    <rect key="frame" x="20" y="11.333333333333336" width="353" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="u3M-ST-TXr" firstAttribute="centerY" secondItem="k1n-uF-f5f" secondAttribute="centerY" id="LrJ-P0-wJO"/>
+                                                <constraint firstItem="u3M-ST-TXr" firstAttribute="leading" secondItem="k1n-uF-f5f" secondAttribute="leading" constant="20" id="ai6-OW-Hgd"/>
+                                                <constraint firstAttribute="trailing" secondItem="u3M-ST-TXr" secondAttribute="trailing" constant="20" id="w1h-FH-MR6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="eDg-Mb-glg" kind="show" id="CXN-07-OYN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="w4M-ti-zZF" id="coa-9G-tsm"/>
+                            <outlet property="delegate" destination="w4M-ti-zZF" id="vlY-15-SQz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Demo" largeTitleDisplayMode="never" id="g1E-Ev-cJJ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UvR-bt-9uO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194.6564885496183" y="-196.47887323943664"/>
+        </scene>
+        <!--Image Cropper-->
+        <scene sceneID="Tqk-1c-Oqn">
+            <objects>
+                <viewController id="m0T-ST-42L" customClass="ImageCropperDemoViewController" customModule="ImageVideoCropperExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UA1-Ok-ThC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2VI-Oe-qLq">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ViQ-u5-NTr">
+                                <rect key="frame" x="0.0" y="725" width="393" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxT-PL-KV3">
+                                        <rect key="frame" x="171.33333333333334" y="4.6666666666666288" width="50.333333333333343" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="crop.rotate" catalog="system"/>
+                                        <connections>
+                                            <action selector="cropImage:" destination="m0T-ST-42L" eventType="touchUpInside" id="pac-hn-LJC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dxT-PL-KV3" firstAttribute="centerY" secondItem="ViQ-u5-NTr" secondAttribute="centerY" id="hJZ-Bi-cZh"/>
+                                    <constraint firstItem="dxT-PL-KV3" firstAttribute="centerX" secondItem="ViQ-u5-NTr" secondAttribute="centerX" id="uKo-hb-cGL"/>
+                                    <constraint firstAttribute="height" constant="44" id="yrL-Ga-g27"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Sz-uq-dsy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ViQ-u5-NTr" firstAttribute="leading" secondItem="1Sz-uq-dsy" secondAttribute="leading" id="BUY-PI-I3v"/>
+                            <constraint firstItem="2VI-Oe-qLq" firstAttribute="leading" secondItem="1Sz-uq-dsy" secondAttribute="leading" id="Cz8-8i-T1y"/>
+                            <constraint firstItem="1Sz-uq-dsy" firstAttribute="trailing" secondItem="2VI-Oe-qLq" secondAttribute="trailing" id="dHo-jg-mKw"/>
+                            <constraint firstItem="1Sz-uq-dsy" firstAttribute="bottom" secondItem="2VI-Oe-qLq" secondAttribute="bottom" id="hdU-3A-agf"/>
+                            <constraint firstItem="2VI-Oe-qLq" firstAttribute="top" secondItem="1Sz-uq-dsy" secondAttribute="top" id="mSQ-yQ-uHN"/>
+                            <constraint firstItem="1Sz-uq-dsy" firstAttribute="bottom" secondItem="ViQ-u5-NTr" secondAttribute="bottom" id="uH3-3R-LgE"/>
+                            <constraint firstItem="1Sz-uq-dsy" firstAttribute="trailing" secondItem="ViQ-u5-NTr" secondAttribute="trailing" id="xzh-UU-BVI"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Image Cropper" largeTitleDisplayMode="never" id="suM-0h-ERt">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="H9c-K8-ILe">
+                            <connections>
+                                <action selector="addImage:" destination="m0T-ST-42L" id="eF6-6h-IPJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="editBar" destination="ViQ-u5-NTr" id="ycf-k3-5Fe"/>
+                        <outlet property="imageView" destination="2VI-Oe-qLq" id="hOy-bQ-f3E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zz8-S9-GRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1274.0458015267175" y="-393.66197183098592"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vzl-zM-wiy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jay-S1-3du" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oSF-ZU-jd0">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="w4M-ti-zZF" kind="relationship" relationship="rootViewController" id="orm-4m-J6k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpu-Bf-dCz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-732.06106870229007" y="-196.47887323943664"/>
+        </scene>
+        <!--Video Cropper-->
+        <scene sceneID="O8T-aj-PPU">
+            <objects>
+                <viewController id="eDg-Mb-glg" customClass="VideoCropperDemoViewController" customModule="ImageVideoCropperExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kqz-Fw-7e0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDz-rR-9g0">
+                                <rect key="frame" x="0.0" y="103" width="393" height="671"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMz-sT-vFF">
+                                <rect key="frame" x="0.0" y="774" width="393" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LX-4o-shm">
+                                        <rect key="frame" x="171.33333333333334" y="4.6666666666666288" width="50.333333333333343" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="crop.rotate" catalog="system"/>
+                                        <connections>
+                                            <action selector="editVideo:" destination="eDg-Mb-glg" eventType="touchUpInside" id="ZaX-d2-TjN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="1LX-4o-shm" firstAttribute="centerY" secondItem="BMz-sT-vFF" secondAttribute="centerY" id="KBU-Yk-r7P"/>
+                                    <constraint firstAttribute="height" constant="44" id="caj-Rt-O37"/>
+                                    <constraint firstItem="1LX-4o-shm" firstAttribute="centerX" secondItem="BMz-sT-vFF" secondAttribute="centerX" id="w0h-qg-ytr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gz0-j0-IPS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gz0-j0-IPS" firstAttribute="bottom" secondItem="oDz-rR-9g0" secondAttribute="bottom" constant="44" id="0J6-RR-kEj"/>
+                            <constraint firstItem="gz0-j0-IPS" firstAttribute="bottom" secondItem="BMz-sT-vFF" secondAttribute="bottom" id="DUe-3L-0E2"/>
+                            <constraint firstItem="oDz-rR-9g0" firstAttribute="top" secondItem="gz0-j0-IPS" secondAttribute="top" id="YAO-yA-TP1"/>
+                            <constraint firstItem="BMz-sT-vFF" firstAttribute="trailing" secondItem="gz0-j0-IPS" secondAttribute="trailing" id="cG0-sc-82x"/>
+                            <constraint firstItem="gz0-j0-IPS" firstAttribute="trailing" secondItem="oDz-rR-9g0" secondAttribute="trailing" id="hfj-Pf-ufo"/>
+                            <constraint firstItem="BMz-sT-vFF" firstAttribute="leading" secondItem="gz0-j0-IPS" secondAttribute="leading" id="mwU-8o-9gk"/>
+                            <constraint firstItem="oDz-rR-9g0" firstAttribute="leading" secondItem="gz0-j0-IPS" secondAttribute="leading" id="qIZ-vN-J2u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Video Cropper" largeTitleDisplayMode="never" id="5kD-qC-Le3">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="AtN-8r-tF0">
+                            <connections>
+                                <action selector="showGallery:" destination="eDg-Mb-glg" id="ys1-OV-nbO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="editBar" destination="BMz-sT-vFF" id="9Xl-7k-1dD"/>
+                        <outlet property="videoContainerView" destination="oDz-rR-9g0" id="kvN-hE-etP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdd-Uj-doh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1323" y="300"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="crop.rotate" catalog="system" width="114" height="128"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
