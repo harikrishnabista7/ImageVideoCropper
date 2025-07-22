@@ -1,6 +1,6 @@
 # ImageVideoCropper
 
-iOS library extends from TOCropViewController to add the support for the video cropper functionality
+iOS library extended from TOCropViewController to add the support for the video cropper functionality
 
 ## ✨ Features
 
